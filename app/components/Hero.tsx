@@ -27,12 +27,12 @@ const Hero = () => {
 
 	return (
 		<section className="relative w-full h-[calc(100svh-0px)] mx-auto">
-			<div className={`paddingX absolute inset-0 top-24 sm:top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-				<div className="flex flex-col justify-center items-center mt-5">
+			<div className={`paddingX absolute inset-0 top-24 sm:top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 z-10 pointer-events-none`}>
+				<div className="flex flex-col justify-center items-center mt-5 pointer-events-auto">
 					<div className="w-5 h-5 rounded-full bg-[#915EFF] " />
 					<div className="w-1 sm:h-80 h-40 violet-gradient" />
 				</div>
-				<div>
+				<div className="pointer-events-auto z-10 w-full sm:w-auto">
 					<div className="flex items-center gap-6 flex-wrap">
 						<Image
 							src="https://avatars.githubusercontent.com/u/209531231?v=4"
@@ -47,9 +47,23 @@ const Hero = () => {
 								Hi, I&apos;m <span className="text-[#915EFF] ">Aditya Verma</span>
 							</h1>
 							<p className="heroSubText mt-2">
-								Frontend Engineer · Crafting Interfaces & Scalable Frontend
+								Backend Engineer · Full Stack Systems · Real-Time Architecture
 							</p>
 						</div>
+					</div>
+					<div className="mt-6 sm:ml-[120px] flex flex-col gap-3 max-w-[90vw] md:max-w-[500px] lg:max-w-[600px] xl:max-w-[700px]">
+						<p className="text-secondary text-[13px] sm:text-[15px] flex items-center gap-3">
+							<span className="w-2 h-2 rounded-full bg-green-400 inline-block shrink-0 shadow-[0_0_6px_rgba(74,222,128,0.6)]" />
+							Production systems deployed on AWS EC2 with Nginx, PM2, and CI/CD
+						</p>
+						<p className="text-secondary text-[13px] sm:text-[15px] flex items-center gap-3">
+							<span className="w-2 h-2 rounded-full bg-green-400 inline-block shrink-0 shadow-[0_0_6px_rgba(74,222,128,0.6)]" />
+							Real-time architecture using WebSockets with presence and low-latency updates
+						</p>
+						<p className="text-secondary text-[13px] sm:text-[15px] flex items-center gap-3">
+							<span className="w-2 h-2 rounded-full bg-green-400 inline-block shrink-0 shadow-[0_0_6px_rgba(74,222,128,0.6)]" />
+							608 GitHub contributions · 230+ DSA problems · Open-source contributor
+						</p>
 					</div>
 				</div>
 			</div>

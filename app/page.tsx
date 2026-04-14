@@ -14,6 +14,7 @@ import {
 	Diagrams,
 	Videos,
 	Articles,
+	EngineeringPrinciples,
 } from "./components";
 import Chatbot from "./components/Chatbot";
 import ShareButtons from "./components/ShareButtons";
@@ -69,13 +70,14 @@ export default function Home() {
 				<Hero />
 			</div>
 			<About services={services} />
-			<Experience isLoaded={isLoaded} />
-			<Tech isLoaded={isLoaded} />
-			<Articles />
 			<Works />
 			<Videos />
-			<Stats />
 			<Diagrams />
+			<Tech isLoaded={isLoaded} />
+			<Experience isLoaded={isLoaded} />
+			<EngineeringPrinciples />
+			<Stats />
+			<Articles />
 			<Feedbacks />
 			<div className="relative z-0">
 				<Contact />

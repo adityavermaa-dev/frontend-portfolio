@@ -7,19 +7,19 @@ export function getOverview(): string {
     "👋 Welcome! I'm Aditya Verma’s Portfolio AI Assistant.",
     "",
     "I can help you explore:",
-    "• 💼 Frontend Experience & Background",
-    "• 💻 Technical Skills & Tools",
-    "• 🚀 Projects & Case Studies",
+    "• 💼 Backend & Full Stack Experience",
+    "• 💻 Core Technologies (Node, Direct AWS, MongoDB)",
+    "• 🚀 Production Projects & Traffic Metrics",
     "• 📊 GitHub & Coding Activity",
-    "• 🧠 UI Architecture & Performance Concepts",
+    "• 🧠 Systems Architecture Concepts",
     "",
     "Try asking:",
-    '• "What are Aditya’s skills?"',
-    '• "Tell me about his projects"',
-    '• "How does he optimize performance?"',
-    '• "Show GitHub stats"',
+    '• "What are Aditya’s backend skills?"',
+    '• "Tell me about his AWS deployments"',
+    '• "Show me his real-time projects"',
+    '• "How does DevSync handle Auth?"',
     "",
-    "Feel free to ask anything about Aditya’s frontend journey!",
+    "Feel free to ask anything about Aditya’s systems engineering journey!",
   ].join("\n");
 }
 
@@ -30,22 +30,22 @@ export function getSkillsOverview(): string {
     "🛠️ Aditya’s Technical Skillset:",
     "",
     "**Languages:**",
-    "JavaScript (ES6+), TypeScript, HTML5, CSS3",
+    "JavaScript (ES6+), TypeScript, Java",
     "",
-    "**Frontend Frameworks & Libraries:**",
-    "React, React Router, Tailwind CSS, SCSS, Framer Motion, GSAP",
+    "**Backend Frameworks & Realtime:**",
+    "Node.js, Express.js, Socket.io (WebSockets)",
     "",
-    "**State Management:**",
-    "Redux Toolkit, Context API",
+    "**Databases & Storage:**",
+    "PostgreSQL, MongoDB (Aggregation Pipelines), Redis, Supabase",
     "",
-    "**Authentication & Services:**",
-    "Firebase Authentication",
+    "**Infrastructure & DevOps:**",
+    "AWS EC2, Nginx, PM2, Docker, GitHub Actions, Cloudflare",
     "",
-    "**Performance & UI Concepts:**",
-    "Lazy Loading, Code Splitting, Protected Routes, RBAC, Component Architecture",
+    "**Authentication & Security:**",
+    "JWT, OTP, OAuth (Google/GitHub), Token Rotation",
     "",
-    "**Tools & Platforms:**",
-    "Git, GitHub, Netlify, Vercel, VS Code",
+    "**Frontend (Supporting):**",
+    "React, Next.js, Tailwind CSS, Capacitor",
   ].join("\n");
 }
 
@@ -55,14 +55,14 @@ export function getExperienceOverview(): string {
   return [
     "💼 Professional Overview:",
     "",
-    "Aditya is a **Frontend Developer** focused on:",
-    "• Building scalable React applications",
-    "• Designing role-based dashboards (Admin / User)",
-    "• Implementing protected routes & authentication",
-    "• Writing clean, reusable component architecture",
-    "• Optimizing UI performance and Lighthouse scores",
+    "Aditya is a **Backend-Focused Full Stack Engineer** who builds real systems, not just tutorial clones. He focuses on:",
+    "• Engineering robust REST APIs and WebSocket servers",
+    "• Handling direct cloud infrastructure (AWS EC2, Nginx reverse proxy)",
+    "• Designing scalable MongoDB aggregation pipelines",
+    "• Shipping to production with CI/CD and process managers (PM2)",
+    "• Integrating live auth flows and payment systems (Razorpay)",
     "",
-    "He is actively seeking **frontend internship opportunities**.",
+    "He is actively seeking **backend, infrastructure, or full-stack roles**.",
   ].join("\n");
 }
 
@@ -72,42 +72,40 @@ export function getProjectsOverview(): string {
   return [
     "🚀 Featured Projects:",
     "",
-    "1. **InsightDash – Role-Based Dashboard**",
-    "   Frontend-focused admin & user dashboard with protected routes",
-    "   Tech: React, Context API, React Router, SCSS, Netlify",
+    "1. **DevSync – Real-Time Collaboration**",
+    "   Production WebSocket server with live presence and read receipts.",
+    "   Tech: Node.js, Express, Socket.io, AWS EC2, Razorpay",
     "",
-    "2. **AI-Powered Movie Recommendation App**",
-    "   Netflix-style UI with AI-based movie suggestions",
-    "   Tech: React, Redux, Firebase Auth, Gemini AI",
+    "2. **Aura Music – Cross-Platform Streaming**",
+    "   Single backend serving both web and Android APK with offline capabilities.",
+    "   Tech: Node.js, MongoDB, Supabase, Capacitor",
     "",
-    "3. **Spylt Milk – Animated Brand Website**",
-    "   Animation-heavy marketing site inspired by modern brand pages",
-    "   Tech: React, Tailwind CSS, GSAP, ScrollTrigger",
+    "3. **VideoTube – Social Media Backend**",
+    "   Comprehensive API capable of YouTube+Twitter functionality with 50+ endpoints.",
+    "   Tech: Node.js, Aggregation Pipelines, Cloudinary, JWT",
     "",
-    "Each project includes live demos, source code, and UI breakdowns.",
+    "These contain live verified metrics (like 17K traffic from Cloudflare).",
   ].join("\n");
 }
 
-// ---- InsightDash Details ----
+// ---- DevSync Details ----
 
-export function getInsightDashDetails(): string {
+export function getDevSyncDetails(): string {
   return [
-    "📊 **InsightDash – Role-Based Admin & User Dashboard**",
+    "📊 **DevSync – Real-Time Collaboration Engine**",
     "",
     "**Overview:**",
-    "A frontend-focused SaaS-style dashboard demonstrating real-world UI patterns.",
+    "A highly scalable WebSocket driven platform that supports live messaging, presence tracking, and typing indicators.",
     "",
-    "**Key Features:**",
-    "• 🔐 Role-Based Access Control (Admin / User)",
-    "• 🚦 Protected routes using React Router",
-    "• 📊 Dashboard widgets, tables & summaries",
-    "• ♻️ Reusable and scalable component structure",
-    "• 🌐 Netlify redirect handling for SPA routing",
+    "**Key Infrastructure:**",
+    "• 🔐 JWT Access + Refresh token rotation & new-device login alerts",
+    "• ⚡ Deployed raw on AWS EC2, bypassing PaaS limits",
+    "• 🛡️ Nginx acts as a reverse proxy, load-balancing requests",
+    "• ⚙️ PM2 ensures zero-downtime restarts and background running",
+    "• 💳 Integrated Razorpay Webhooks for premium subscriptions",
     "",
-    "**Tech Stack:**",
-    "React, Context API, React Router, SCSS, Netlify",
-    "",
-    "This project showcases real-world frontend architecture decisions.",
+    "**Impact:**",
+    "Handles live traffic verifying 280+ views/month and 178ms page load times under Cloudflare analytics.",
   ].join("\n");
 }
 
@@ -117,9 +115,9 @@ export function getContactInfo(): string {
   return [
     "📬 Contact Aditya Verma:",
     "",
-    "• 💼 LinkedIn: Available in Social Profiles section",
-    "• 🐙 GitHub: github.com/adit-ya15",
-    "• 🌐 Portfolio: Live portfolio website",
+    "• 💼 LinkedIn: linkedin.com/in/adityaverma-dev/",
+    "• 🐙 GitHub: github.com/adityavermaa-dev",
+    "• 🌐 Portfolio: adityaverma-dev.vercel.app",
     "• 📄 Resume: Downloadable from hero section",
     "",
     "You can also reach out using the contact form on the website.",
@@ -130,19 +128,14 @@ export function getContactInfo(): string {
 
 export function getGitHubStats(): string {
   return [
-    "📊 GitHub Activity:",
+    "📊 Coding Activity & Metrics:",
     "",
-    "Aditya maintains an active GitHub profile with:",
-    "• Frontend-focused projects",
-    "• Clean commit history",
-    "• Practical React implementations",
+    "Aditya proves his consistency through real data:",
+    "• 608+ GitHub contributions in the last year",
+    "• 230+ LeetCode problems solved (focusing heavily on DSA via Java)",
+    "• Production traffic: 17.1K+ requests reaching his AWS servers weekly",
     "",
-    "Stats section includes:",
-    "• Contribution graph",
-    "• Most-used languages",
-    "• Project activity overview",
-    "",
-    "All stats are displayed dynamically in the portfolio.",
+    "He doesn't rely on hype—he relies on verifiable cloud statistics.",
   ].join("\n");
 }
 
@@ -150,21 +143,16 @@ export function getGitHubStats(): string {
 
 export function getArchitectureOverview(): string {
   return [
-    "🧠 UI Architecture & Design Concepts:",
+    "🧠 System Architecture Concepts:",
     "",
-    "Aditya focuses on:",
-    "• Component-driven architecture",
-    "• Separation of concerns",
-    "• Clean folder structure",
-    "• Scalable routing patterns",
+    "Aditya's backend principles include:",
+    "• API-First Design (Postman verified)",
+    "• Event-Driven Architecture (Socket.io)",
+    "• Raw Deployments (AWS EC2 + Nginx)",
+    "• Process Stability (PM2)",
+    "• Security-First Auth (JWT + OTP + Rate Limiting)",
     "",
-    "Key concepts demonstrated:",
-    "• Protected Routes",
-    "• Role-Based UI rendering",
-    "• Lazy Loading & Code Splitting",
-    "• Performance-aware rendering",
-    "",
-    "Architecture visuals are available in the portfolio.",
+    "His portfolio visibly maps these architectural flows via diagrams showing client-to-DB relationships.",
   ].join("\n");
 }
 
@@ -178,10 +166,8 @@ export function getEducationOverview(): string {
     "  Ajay Kumar Garg Engineering College, Ghaziabad",
     "  CGPA: 8.01 | 2023 – 2027",
     "",
-    "• CBSE Board (Class XII)",
-    "  Green Field Academy, Lakhimpur Kheri",
-    "  Percentage: 92%",
+    "• CBSE Board (Class XII) | 92%",
     "",
-    "Currently focused on frontend development and UI engineering.",
+    "Currently operating efficiently merging heavy DSA logic with production server deployments.",
   ].join("\n");
 }

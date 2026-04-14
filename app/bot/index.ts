@@ -18,72 +18,63 @@ export async function getGroqChatCompletion(
                 type: "function",
                 function: {
                     name: "getOverview",
-                    description:
-                        "Provides a welcome message and explains what Aditya Verma’s portfolio assistant can help with, including example questions.",
+                    description: "Provides a welcome message and explains what Aditya Verma’s portfolio assistant can help with.",
                 },
             },
             {
                 type: "function",
                 function: {
                     name: "getSkillsOverview",
-                    description:
-                        "Returns Aditya Verma’s frontend-focused technical skills, including languages, frameworks, state management, UI tools, and platforms.",
+                    description: "Returns Aditya Verma’s backend-focused technical skills, including Node.js, AWS, and Databases.",
                 },
             },
             {
                 type: "function",
                 function: {
                     name: "getExperienceOverview",
-                    description:
-                        "Gives an overview of Aditya Verma’s frontend experience, areas of focus, and internship-oriented profile.",
+                    description: "Gives an overview of Aditya Verma’s backend engineering experience and infrastructure focus.",
                 },
             },
             {
                 type: "function",
                 function: {
                     name: "getProjectsOverview",
-                    description:
-                        "Lists Aditya Verma’s featured frontend projects such as InsightDash, AI Movie Recommendation App, and Spylt Milk with brief descriptions.",
+                    description: "Lists Aditya Verma’s featured backend projects such as DevSync, Aura Music, and VideoTube.",
                 },
             },
             {
                 type: "function",
                 function: {
-                    name: "getInsightDashDetails",
-                    description:
-                        "Provides detailed information about the InsightDash project including role-based access control, protected routes, UI components, and routing setup.",
+                    name: "getDevSyncDetails",
+                    description: "Provides detailed information about the DevSync project including WebSockets, AWS EC2, PM2, and Real-Time features.",
                 },
             },
             {
                 type: "function",
                 function: {
                     name: "getContactInfo",
-                    description:
-                        "Returns ways to contact Aditya Verma including GitHub, LinkedIn, portfolio website, and resume access.",
+                    description: "Returns ways to contact Aditya Verma including GitHub, LinkedIn, portfolio website, and resume access.",
                 },
             },
             {
                 type: "function",
                 function: {
                     name: "getGitHubStats",
-                    description:
-                        "Explains Aditya Verma’s GitHub activity, contribution stats, and where they are displayed in the portfolio.",
+                    description: "Explains Aditya Verma’s GitHub activity, LeetCode stats, and production code traffic.",
                 },
             },
             {
                 type: "function",
                 function: {
                     name: "getArchitectureOverview",
-                    description:
-                        "Describes frontend architecture concepts used by Aditya Verma such as component architecture, protected routes, lazy loading, and performance optimization.",
+                    description: "Describes backend architecture concepts used by Aditya Verma such as AWS EC2 deployments, JWT, and PM2.",
                 },
             },
             {
                 type: "function",
                 function: {
                     name: "getEducationOverview",
-                    description:
-                        "Provides an overview of Aditya Verma’s education including college, degree, CGPA, and academic background.",
+                    description: "Provides an overview of Aditya Verma’s education including college, degree, CGPA, and academic background.",
                 },
             },
         ],

@@ -7,6 +7,7 @@ import Tech from './Tech';
 import Experience from './Experience';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
+import EngineeringPrinciples from './EngineeringPrinciples';
 import Contact from './Contact';
 import Stats from './Stats';
 import Diagrams from './Diagrams';
@@ -32,6 +33,7 @@ export {
   Experience,
   Works,
   Feedbacks,
+  EngineeringPrinciples,
   Contact,
   Stats,
   Diagrams,

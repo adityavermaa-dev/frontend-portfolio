@@ -96,7 +96,7 @@ const ProjectCard = ({
 					</div>
 				</div>				<div className="mt-5">
 					<h3 className="text-white font-bold text-[24px]">{name}</h3>
-					<p className="mt-2 text-secondary text-[14px]">{description}</p>
+					<p className="mt-2 text-secondary text-[14px] whitespace-pre-wrap">{description}</p>
 				</div>
 
 				<div className="mt-4 flex flex-wrap gap-2">
@@ -154,7 +154,7 @@ const Works = () => {
 	return (
 		<>
 			<motion.div variants={textVariant()}>
-				<p className="sectionSubText">My work</p>
+				<p className="sectionSubText">What I Ship</p>
 				<h2 className="sectionHeadText">Projects.</h2>
 			</motion.div>
 
@@ -163,11 +163,9 @@ const Works = () => {
 					variants={fadeIn("", "", 0.1, 1)}
 					className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
 				>
-					Following projects showcases my skills and experience through
-					real-world examples of my work. Each project is briefly described with
-					links to code repositories and live demos in it. It reflects my
-					ability to solve complex problems, work with different technologies,
-					and manage projects effectively.
+					These are production applications — deployed, used by real people, and
+					maintained over time. Each one taught me something about building
+					systems that actually work outside of development.
 				</motion.p>
 			</div>
 

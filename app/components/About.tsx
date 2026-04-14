@@ -56,19 +56,35 @@ const About = ({ services }: { services: Service[] }) => {
 	return (
 		<>
 			<motion.div variants={textVariant()}>
-				<p className="sectionSubText">Introduction</p>
+				<p className="sectionSubText">What I Build</p>
 				<h2 className="sectionHeadText">Overview.</h2>
 			</motion.div>
 
-			<motion.p
+			<motion.div
 				variants={fadeIn("", "", 0.1, 1)}
 				className="mt-4 text-secondary text-[16px] sm:text-[17px] lg:text-[19px] max-w-3xl leading-relaxed"
 			>
-				I’m <span className="text-white font-semibold">Aditya Verma</span>, a
-				<strong className="text-white font-semibold"> frontend-focused developer</strong> who enjoys building <strong className="text-white font-semibold">clean, performant, and scalable web applications</strong> using React and modern frontend tools.
-				I have hands-on experience creating <strong className="text-white font-semibold">real-world UI patterns</strong> such as <strong className="text-white font-semibold">role-based dashboards, protected routes, global state management</strong>, and <strong className="text-white font-semibold">animation-heavy interfaces</strong>. My work focuses on <strong className="text-white font-semibold">component architecture, performance optimization, and clean UI/UX</strong>, rather than just making things “work”.
-				Through projects like <strong className="text-white font-semibold">InsightDash</strong>, <strong className="text-white font-semibold">AI-Powered Movie Recommendation App</strong>, and <strong className="text-white font-semibold">Spylt Milk</strong>, I’ve worked on problems involving <strong className="text-white font-semibold">authentication flows, conditional rendering, AI integration</strong>, and <strong className="text-white font-semibold">smooth motion design</strong>. I’m actively seeking <strong className="text-white font-semibold">frontend internship opportunities</strong> where I can learn from experienced engineers and contribute to impactful products.
-			</motion.p>
+				<p className="mb-5">
+					I&apos;m <span className="text-white font-semibold">Aditya Verma</span> &mdash; I build backend systems and ship them to production. Instead of tutorial clones, I focus on building infrastructure that works in the real world:
+				</p>
+				<ul className="list-disc ml-5 md:ml-8 space-y-4 mb-5">
+					<li>
+						Designing with <strong className="text-white font-semibold">Node.js, Express, and MongoDB</strong> &mdash; engineering REST APIs, WebSocket servers, and secure authentication flows.
+					</li>
+					<li>
+						Deploying on <strong className="text-white font-semibold">AWS EC2 with Nginx and PM2</strong> &mdash; setting up CI/CD and dealing with the messy parts like CORS, OAuth callbacks, and process crashes.
+					</li>
+					<li>
+						Building <strong className="text-white font-semibold">DevSync</strong> &mdash; a production-ready WebSockets engine handling live messaging and user presence.
+					</li>
+					<li>
+						Building <strong className="text-white font-semibold">VideoTube</strong> &mdash; a micro-services style backend with 50+ endpoints executing complex multi-collection aggregations.
+					</li>
+				</ul>
+				<p>
+					They are deployed, they have real traffic, and they break in ways that teach you more than any course. Currently looking for <strong className="text-white font-semibold">backend or full stack roles</strong> where I can build systems that matter.
+				</p>
+			</motion.div>
 			<div className="mt-20 flex flex-wrap gap-10 justify-center">
 				{services.map((service, index) => (
 					<ServiceCard key={service.title} index={index} {...service} />

@@ -6,11 +6,10 @@ import ResumeButton from "./ResumeButton";
 
 const navLinks = [
 	{ id: "about", title: "About" },
-	{ id: "work", title: "Experience" },
 	{ id: "projects", title: "Projects" },
-	{ id: "videos", title: "Videos" },
-	{ id: "stats", title: "Stats" },
-	// { id: "diagrams", title: "Architecture" },
+	{ id: "diagrams", title: "Architecture" },
+	{ id: "tech", title: "Stack" },
+	{ id: "work", title: "Journey" },
 	{ id: "contact", title: "Contact" },
 ];
 
@@ -62,7 +61,7 @@ const Navbar = () => {
 						/>
 					</Link>
 					<p className="text-white text-base sm:text-2xl font-bold cursor-pointer flex flex-wrap leading-tight">
-						Aditya <span className="hidden xs:inline sm:inline">&nbsp;|&nbsp;adit-ya15</span>
+						Aditya <span className="hidden xs:inline sm:inline">&nbsp;|&nbsp;adityaverma-dev</span>
 					</p>
 				</button>
 
